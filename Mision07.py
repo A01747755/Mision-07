@@ -24,7 +24,7 @@ def encontrarMayor(): #Imprime el mayor de una serie indefinida de números ingr
     else:
         print("El mayor es:", numeroMayor)
 
-def leerOpcion():
+def leerOpcion(): #Muestra al usuario un menú desde la función Main, donde seleccionará qué quiere hacer.
     print("\nMisión 07. Ciclos while ")
     print("Autor: Víctor Manuel Rodríguez Loyola")
     print("Matrícula: A01747755")
