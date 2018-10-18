@@ -24,46 +24,31 @@ def encontrarMayor(): #Imprime el mayor de una serie indefinida de números ingr
     else:
         print("El mayor es:", numeroMayor)
 
-
-def main():
-    print("Misión 07. Ciclos while ")
+def leerOpcion():
+    print("\nMisión 07. Ciclos while ")
     print("Autor: Víctor Manuel Rodríguez Loyola")
     print("Matrícula: A01747755")
     print("1. Calcular divisiones")
     print("2. Encontrar el mayor")
     print("3. Salir")
-    opcion= int(input("Teclea tu opción: "))
+    opcion = int(input("Teclea tu opción: "))
+    return opcion
+
+def main():
+    opcion=leerOpcion()
     while opcion !=3:
         if opcion==1:
             print("Calculando divisiones")
             dividendo= int(input("Dividendo: "))
             divisor= int(input("Divisor: "))
             dividir(dividendo,divisor)
-            print("\nMisión 07. Ciclos while ")
-            print("Autor: Víctor Manuel Rodríguez Loyola")
-            print("Matrícula: A01747755")
-            print("1. Calcular divisiones")
-            print("2. Encontrar el mayor")
-            print("3. Salir")
-            opcion = int(input("Teclea tu opción: "))
+            opcion=leerOpcion()
         elif opcion==2:
             encontrarMayor()
-            print("\nMisión 07. Ciclos while ")
-            print("Autor: Víctor Manuel Rodríguez Loyola")
-            print("Matrícula: A01747755")
-            print("1. Calcular divisiones")
-            print("2. Encontrar el mayor")
-            print("3. Salir")
-            opcion = int(input("Teclea tu opción: "))
+            opcion= leerOpcion()
         elif opcion <1 or opcion>3:
             print("ERROR, teclea 1, 2 o 3.")
-            print("\nMisión 07. Ciclos while ")
-            print("Autor: Víctor Manuel Rodríguez Loyola")
-            print("Matrícula: A01747755")
-            print("1. Calcular divisiones")
-            print("2. Encontrar el mayor")
-            print("3. Salir")
-            opcion = int(input("Teclea tu opción: "))
+            opcion = leerOpcion()
     print("Gracias por usar este programa. Regresa pronto.")
 
 
